@@ -1,0 +1,55 @@
+body{
+    background-color:rgb(0, 0, 0);
+    color:white;
+    font-size: 30px;
+    font-style: italic;
+}
+.container{
+  display:grid;
+  width: 80vw;
+  height: 100vw;
+  grid-template-columns: 300px 300px 300px ;
+  grid-template-rows: 300px 300px 200px 400px 500px 1000px;
+  margin: auto;
+  grid-gap: 15px;
+ /* grid-template-areas:"top top" "bottomleft bottomright" ;*/
+  border: 2px solid rgb(255, 196, 0);
+  justify-content: center;
+  justify-content: center;
+  grid-auto-rows: minmax(50px ,135px);     /*اتستحدام عدد لانهائي من الصفوف نستخدم auto */
+  grid-template-columns: 1fr 1fr 1fr 1fr;    /*بدل grid-template-columns: repeat(4 ,1fr);*/
+
+
+  
+
+}
+.box{
+      display: flex;
+      align-items: center;  
+      justify-content: center;
+      border: 1px solid red;
+      justify-content: center;
+  }
+#one{
+    /*grid-area: top; */
+}
+
+#tow{
+   /* grid-area: bottomleft; */
+}
+
+#three{
+   /* grid-area: bottomright; */
+}
+
+#four{
+   /* grid-area: ;*/ 
+}
+#five{
+  /*  grid-area: ;*/ 
+}
+
+#six{
+   /* grid-area: ; */
+}
+
